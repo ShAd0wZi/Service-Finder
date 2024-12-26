@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Service Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">ServiceFinder</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#providers">Providers</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="search-section">
+            <h1>Find Local Services</h1>
+            <div class="search-container">
+                <select id="service-type">
+                    <option value="">Select Service</option>
+                    <option value="plumbing">Plumbing</option>
+                    <option value="electrical">Electrical</option>
+                    <option value="cleaning">Cleaning</option>
+                    <option value="gardening">Gardening</option>
+                </select>
+                <input type="text" id="location" placeholder="Enter your location">
+                <button onclick="searchServices()">Search</button>
+            </div>
+        </section>
+
+        <section id="providers-list">
+            <!-- Providers will be dynamically inserted here -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ServiceFinder. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
